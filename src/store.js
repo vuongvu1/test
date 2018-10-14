@@ -22,7 +22,7 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 const composedEnhancers = compose(
-  applyMiddleware(...middleware),
+  applyMiddleware(...middleware), // redux-thunk
   ...enhancers,
 );
 
