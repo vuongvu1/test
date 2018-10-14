@@ -2,6 +2,7 @@
   "name": "year-anniversary",
   "version": "0.1.0",
   "private": true,
+  "description": "This project is for my beloved one, Letter",
   "dependencies": {
     "connected-react-router": "^4.5.0",
     "history": "^4.7.2",
