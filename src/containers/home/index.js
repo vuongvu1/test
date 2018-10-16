@@ -13,7 +13,8 @@ const Home = props => (
   <div>
     <h1>Home</h1>
     <p>
-      Count:
+      Counter:
+      {' '}
       {props.count}
     </p>
 
