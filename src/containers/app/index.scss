@@ -22,6 +22,15 @@
   color: #61dafb;
 }
 
+header > a {
+  margin-right: 10px;
+  color: lightskyblue;
+
+  &:hover {
+    color: lightblue;
+  }
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
