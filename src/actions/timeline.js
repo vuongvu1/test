@@ -3,7 +3,7 @@ import {
   UPDATE_CURRENT_TIMELINE,
 } from '../constants/timeline';
 
-export const updateTimeline = nextTimeline => (dispatch) => {
+export const updateTimeline = step => (dispatch) => {
   dispatch({
     type: UPDATE_CURRENT_TIMELINE_REQUEST,
   });
@@ -11,7 +11,7 @@ export const updateTimeline = nextTimeline => (dispatch) => {
   dispatch({
     type: UPDATE_CURRENT_TIMELINE,
     payload: {
-      nextTimeline,
+      step,
     },
   });
 };

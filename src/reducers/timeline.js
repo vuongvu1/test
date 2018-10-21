@@ -1,9 +1,10 @@
 import * as types from '../constants/timeline';
 
 const initialState = {
-  allTimeline: types.ALL_TIMELINE,
-  currentTimeline: types.DEFAULT_TIMELINE,
-  isUpdatingTimeline: false,
+  all: types.ALL_TIMELINE,
+  current: types.DEFAULT_TIMELINE,
+  step: types.DEFAULT_TIMELINE_STEP,
+  isUpdating: false,
 };
 
 export default (state = initialState, action) => {
@@ -11,16 +12,17 @@ export default (state = initialState, action) => {
     case (types.UPDATE_CURRENT_TIMELINE_REQUEST): {
       return {
         ...state,
-        isUpdatingTimeline: true,
+        isUpdating: true,
       };
     }
 
     case (types.UPDATE_CURRENT_TIMELINE): {
-      const { nextTimeline } = action.payload;
+      const { step } = action.payload;
       return {
         ...state,
-        isUpdatingTimeline: false,
-        currentTimeline: nextTimeline,
+        isUpdating: false,
+        step,
+        current: state.all[step],
       };
     }
 
