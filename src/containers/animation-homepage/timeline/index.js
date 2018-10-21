@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import './index.scss';
 
@@ -11,6 +12,14 @@ const Timeline = (props) => {
       {currentTimeline}
     </div>
   );
+};
+
+Timeline.propTypes = {
+  currentTimeline: PropTypes.string,
+};
+
+Timeline.defaultProps = {
+  currentTimeline: 1,
 };
 
 export default Timeline;
