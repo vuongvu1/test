@@ -5,13 +5,13 @@ import { bindActionCreators } from 'redux';
 
 import Timeline from './timeline';
 import { updateTimeline } from '../../actions/timeline';
+import './index.scss';
 
 const Homepage = (props) => {
   const { timeline, step, updateTimelineAction } = props;
 
   return (
-    <div>
-      Homepage:
+    <div className="homepage">
       <Timeline timeline={timeline} step={step} updateTimeline={updateTimelineAction} />
     </div>
   );

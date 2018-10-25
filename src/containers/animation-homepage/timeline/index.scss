@@ -1,0 +1,13 @@
+@import '../../../constants/variables.scss';
+
+.timeline-container {
+  @extend %display-flex-align-center-vertical;
+
+  .timeline {
+    @extend %display-flex-align-center-vertical;
+    width: 80vw;
+    height: 60px;
+    background: white;
+    opacity: 0.4;
+  }
+}

@@ -6,12 +6,13 @@ import './index.scss';
 const Timeline = (props) => {
   const { timeline, step, updateTimeline } = props;
 
-  console.log({ props });
-
   return (
-    <div>
+    <div className="timeline-container">
       <p>
         {`Current timeline: ${timeline}`}
+      </p>
+      <p className="timeline">
+        timeline
       </p>
       <p>
         <button type="button" onClick={() => updateTimeline(step - 1)}>Previous</button>
