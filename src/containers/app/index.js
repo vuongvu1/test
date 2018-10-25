@@ -7,7 +7,7 @@ import Homepage from '../homepage';
 import './index.scss';
 
 const App = () => (
-  <div>
+  <div className="app">
     <header>
       <Link to="/">Home</Link>
       <Link to="/about-us">About</Link>
