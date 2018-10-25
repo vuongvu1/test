@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import Path from './path';
 import './index.scss';
 
 const Timeline = (props) => {
@@ -12,7 +13,7 @@ const Timeline = (props) => {
         {`Current timeline: ${timeline}`}
       </p>
       <p className="timeline">
-        timeline
+        <Path timeline={timeline} playState={step === 0 ? 'running' : 'paused'} />
       </p>
       <p>
         <button type="button" onClick={() => updateTimeline(step - 1)}>Previous</button>
