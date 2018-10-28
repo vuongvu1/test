@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import React from 'react';
 import PropsTypes from 'prop-types';
 import { connect } from 'react-redux';
@@ -5,6 +7,7 @@ import { bindActionCreators } from 'redux';
 
 import Timeline from './timeline';
 import { updateTimeline } from '../../actions/timeline';
+import Cloud from '../animation/cloud';
 import './index.scss';
 
 const Homepage = (props) => {
@@ -12,7 +15,8 @@ const Homepage = (props) => {
 
   return (
     <div className="homepage">
-      <Timeline timeline={timeline} step={step} updateTimeline={updateTimelineAction} />
+      {/* <Timeline timeline={timeline} step={step} updateTimeline={updateTimelineAction} /> */}
+      <Cloud />
     </div>
   );
 };
