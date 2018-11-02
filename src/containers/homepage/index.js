@@ -15,8 +15,8 @@ const Homepage = (props) => {
 
   return (
     <div className="homepage">
-      {/* <Timeline timeline={timeline} step={step} updateTimeline={updateTimelineAction} /> */}
       <Cloud />
+      <Timeline timeline={timeline} step={step} updateTimeline={updateTimelineAction} />
     </div>
   );
 };
