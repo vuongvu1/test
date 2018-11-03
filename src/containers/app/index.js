@@ -3,20 +3,21 @@ import { Route, Link } from 'react-router-dom';
 
 import Home from '../home';
 import About from '../about';
-import Homepage from '../animation-homepage';
+import Homepage from '../homepage';
+import './index.scss';
 
 const App = () => (
-  <div>
+  <div className="app">
     <header>
       <Link to="/">Home</Link>
       <Link to="/about-us">About</Link>
-      <Link to="/animation-homepage">Animation demo</Link>
+      <Link to="/homepage">Animation demo</Link>
     </header>
 
     <main>
       <Route exact path="/" component={Home} />
       <Route exact path="/about-us" component={About} />
-      <Route exact path="/animation-homepage" component={Homepage} />
+      <Route exact path="/homepage" component={Homepage} />
     </main>
   </div>
 );

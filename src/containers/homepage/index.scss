@@ -1,0 +1,7 @@
+@import '../../constants/variables.scss';
+
+.homepage {
+  @extend %display-flex-align-center-vertical;
+  width: 100%;
+  height: 100%;
+}

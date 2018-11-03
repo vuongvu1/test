@@ -1,0 +1,35 @@
+.app {
+  height: 100vh;
+  width: 100vw;
+  background: lightblue;
+}
+
+header {
+  width: 100%;
+  height: 5%;
+  background: lightskyblue;
+  a {
+    margin-right: 10px;
+    color: black;
+    z-index: 2;
+
+    &:hover {
+      color: lightblue;
+    }
+  }
+}
+
+main {
+  width: 100%;
+  height: 90%;
+  overflow: hidden;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
