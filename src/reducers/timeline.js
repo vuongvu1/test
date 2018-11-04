@@ -3,7 +3,6 @@ import * as types from '../constants/timeline';
 const initialState = {
   all: types.ALL_TIMELINE,
   current: types.DEFAULT_TIMELINE,
-  step: types.DEFAULT_TIMELINE_STEP,
   isUpdating: false,
 };
 
@@ -21,7 +20,6 @@ export default (state = initialState, action) => {
       return {
         ...state,
         isUpdating: false,
-        step,
         current: state.all[step],
       };
     }
