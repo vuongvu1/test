@@ -8,16 +8,16 @@ import './index.scss';
 
 const App = () => (
   <div className="app">
-    <header>
+    <header style={{ display: 'none' }}>
       <Link to="/">Home</Link>
       <Link to="/about-us">About</Link>
       <Link to="/homepage">Animation demo</Link>
     </header>
 
     <main>
-      <Route exact path="/" component={Home} />
+      <Route exact path="/" component={Homepage} />
       <Route exact path="/about-us" component={About} />
-      <Route exact path="/homepage" component={Homepage} />
+      <Route exact path="/homepage" component={Home} />
     </main>
   </div>
 );

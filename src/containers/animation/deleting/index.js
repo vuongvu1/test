@@ -3,11 +3,11 @@ import PropsTypes from 'prop-types';
 
 import './index.scss';
 
-const Typing = (props) => {
+const Deleting = (props) => {
   const { content } = props;
 
   return (
-    <div className="type-wrapper">
+    <div className="delete-wrapper">
       <h1>
         {content}
         <span>&nbsp;</span>
@@ -16,12 +16,12 @@ const Typing = (props) => {
   );
 };
 
-Typing.propTypes = {
+Deleting.propTypes = {
   content: PropsTypes.string,
 };
 
-Typing.defaultProps = {
+Deleting.defaultProps = {
   content: 'HAPPY OUR FIRST YEAR ANNIVERSARY!!',
 };
 
-export default Typing;
+export default Deleting;

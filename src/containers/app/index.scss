@@ -1,7 +1,7 @@
 .app {
   height: 100vh;
   width: 100vw;
-  background: lightblue;
+  // background: lightblue;
 }
 
 header {
@@ -23,6 +23,20 @@ main {
   width: 100%;
   height: 90%;
   overflow: hidden;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Vibur", cursive;
+  font-size: 1rem;
+  background-image: url("https://www.dropbox.com/s/2ct0i6kc61vp0bh/wall.jpg?raw=1");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #141414;
 }
 
 @keyframes App-logo-spin {

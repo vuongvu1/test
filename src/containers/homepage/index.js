@@ -11,18 +11,27 @@ import Cloud from '../animation/cloud';
 import Typing from '../animation/typing';
 import Music from '../music';
 import './index.scss';
+import Deleting from '../animation/deleting';
 
 const Homepage = (props) => {
   const { timeline, updateTimelineAction } = props;
+  // <Timeline timeline={timeline} updateTimeline={updateTimelineAction} />
+  // <Music 
+  //   url={timeline.backgroundMusicUrl}
+  //   play={true}
+  // />
 
   return (
     <div className="homepage">
-      <Timeline timeline={timeline} updateTimeline={updateTimelineAction} />
+      <iframe
+        width='800'
+        height='600'
+        src='https://hlfc.matchat.online/embed/pjZJkIxua2'
+        style={{ border: 'none', marginTop: 50 }}
+        allowFullScreen
+      ></iframe>
       <Typing content={timeline.title} />
-      <Music 
-        url={timeline.backgroundMusicUrl}
-        play={true}
-      />
+      <Deleting content={timeline.title} />
       <Cloud />
     </div>
   );

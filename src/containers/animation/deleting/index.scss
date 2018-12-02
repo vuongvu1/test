@@ -1,12 +1,12 @@
 
-
-.type-wrapper {
+.delete-wrapper {
   h1 {
     position: relative;
     float: left;
     color: #d7b94c;
     font-family: 'Inconsolata', Consolas, monospace;
     font-size: 4em;
+    animation: neon .08s ease-in-out infinite alternate;
     span {
       position: absolute;
       top: 0;
@@ -14,32 +14,33 @@
       background: black;
       width: 100%;
       border-left: .1em solid transparent;
-      -webkit-animation: typing 3s steps(16) forwards,
+      -webkit-animation: deleting 3s steps(16) forwards,
                         cursor 1s infinite,
                         neon .08s ease-in-out infinite alternate;
-      animation: typing 3s steps(16) forwards,
+      animation: deleting 3s steps(16) forwards,
                 cursor 1s infinite,
                 neon .08s ease-in-out infinite alternate;
     }
   }
 }
+
 /* Animation */
-@-webkit-keyframes typing {
+@-webkit-keyframes deleting{
 	from { width: 100%;}
 	to { width: 0;}
 }
 @-webkit-keyframes cursor{
 	50% { border-color: white;}
 }
-@keyframes typing {
+@keyframes deleting{
   0% {
-    width: 100%;
+    width: 0%;
   }
   100% {
-    width: 0;
+    width: 100%;
   }
 }
-@keyframes cursor {
+@keyframes cursor{
 	50% { border-color: white;}
 }
 
