@@ -16,7 +16,7 @@ import Deleting from '../animation/deleting';
 const Homepage = (props) => {
   const { timeline, updateTimelineAction } = props;
   // <Timeline timeline={timeline} updateTimeline={updateTimelineAction} />
-  // <Music 
+  // <Music
   //   url={timeline.backgroundMusicUrl}
   //   play={true}
   // />
@@ -28,10 +28,10 @@ const Homepage = (props) => {
         height='600'
         src='https://hlfc.matchat.online/embed/pjZJkIxua2'
         style={{ border: 'none', marginTop: 50 }}
-        allowFullScreen
-      ></iframe>
+        allowFullScreen>
+      </iframe>
       <Typing content={timeline.title} />
-      <Deleting content={timeline.title} />
+      {/* <Deleting content={timeline.title} /> */}
       <Cloud />
     </div>
   );
