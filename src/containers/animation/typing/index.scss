@@ -2,26 +2,28 @@
 
 .type-wrapper {
   width: 800px;
-  background: black;
-  h1 {
+  .content {
     position: relative;
     float: left;
     color: #d7b94c;
     font-family: 'Inconsolata', Consolas, monospace;
     font-size: 3em;
     animation: neon .08s ease-in-out infinite alternate;
-    .cursor {
-      position: absolute;
-      top: 0;
-      right: 0;
-      background: black;
-      width: 100%;
-      border-left: .1em solid transparent;
-      -webkit-animation: typing 6s steps(20) infinite,
-                        cursor 1s infinite;
-      animation: typing 6s steps(20) infinite,
-                cursor 1s infinite;
-    }
+    // margin: 0 70px;
+    margin-top: 100px;
+    white-space: nowrap;
+    // .cursor {
+    //   position: absolute;
+    //   top: 0;
+    //   right: 0;
+    //   background: black;
+      // width: 100%;
+      // border-left: .1em solid transparent;
+      // -webkit-animation: typing 6s steps(20) infinite,
+      //                   // cursor 1s infinite;
+      // animation: typing 6s steps(20) infinite,
+      //           cursor 1s infinite;
+    // }
   }
 }
 /* Animation */

@@ -9,8 +9,28 @@ class Typing extends React.Component {
 
     this.state = {
       content: 'HAPPY BIRTHDAY TO MỊ!!!',
-      contentList: ['HAPPY BIRTHDAY TO MỊ!!!', 'HAPPY BIRTHDAY TO MỊ!!!', 'HAPPY BIRTHDAY TO MỊ!!!', '5', '6', '7'],
+      contentList: [
+        'MỊ NUMBER 1 <3 <3',
+        'TỦI MỚI NIỀM VUI MỚI',
+        'WISH YOU HAVE A GREAT YEAR',
+        'LETS TRAVEL THE WORLD TOGETHER',
+        'MI <3 MEO',
+        'Mèo thương mị số 1 lun á',
+        'Mị hem đc tủi thân',
+        'Mèo thiệt hạnh phúc',
+        'Mị so ciu',
+        'Mèo so happy to have Mị',
+        'Mị đừng giận mèo nữa huhu',
+        'M* nhún nhún',
+        'love ya',
+      ],
     };
+  }
+
+  componentDidMount() {
+    setInterval(() => {
+      this.setContent();
+    }, 6000);
   }
 
   setContent() {
@@ -20,20 +40,12 @@ class Typing extends React.Component {
   }
 
   render() {
-    setInterval(() => {
-      this.setContent();
-    }, 6000);
-
     const { content } = this.state;
-
     return (
       <div className="type-wrapper">
-        <h1>
-          <span className="content">
-            {content}
-          </span>
-          <span className="cursor">&nbsp;</span>
-        </h1>
+        <span className="content">
+          {content}
+        </span>
       </div>
     );
   }
