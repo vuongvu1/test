@@ -9,21 +9,8 @@
     font-family: 'Inconsolata', Consolas, monospace;
     font-size: 3em;
     animation: neon .08s ease-in-out infinite alternate;
-    // margin: 0 70px;
     margin-top: 100px;
     white-space: nowrap;
-    // .cursor {
-    //   position: absolute;
-    //   top: 0;
-    //   right: 0;
-    //   background: black;
-      // width: 100%;
-      // border-left: .1em solid transparent;
-      // -webkit-animation: typing 6s steps(20) infinite,
-      //                   // cursor 1s infinite;
-      // animation: typing 6s steps(20) infinite,
-      //           cursor 1s infinite;
-    // }
   }
 }
 /* Animation */
@@ -33,26 +20,6 @@
 }
 @-webkit-keyframes cursor{
 	50% { border-color: white;}
-}
-@keyframes typing {
-  0% {
-    width: 100%;
-  }
-  10% {
-    width: 100%;
-  }
-  40% {
-    width: 0;
-  }
-  60% {
-    width: 0;
-  }
-  90% {
-    width: 100%;
-  }
-  100% {
-    width: 100%;
-  }
 }
 @keyframes cursor {
 	50% { border-color: white;}

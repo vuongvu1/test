@@ -26,14 +26,17 @@ const Homepage = (props) => {
       <iframe
         width='800'
         height='600'
-        src='https://www.youtube.com/embed/WuMzBTDz9DI'
+        src='https://www.youtube.com/embed/64rciH2zeGg'
         style={{ border: 'none', marginTop: 50 }}
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen>
       </iframe>
-      {/* <iframe width="1280" height="720" src="https://www.youtube.com/embed/WuMzBTDz9DI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
       <Typing content={timeline.title} />
-      {/* <Deleting content={timeline.title} /> */}
+      <Typing content={timeline.title} />
+      <Typing content={timeline.title} />
+      <Typing content={timeline.title} />
+      <Typing content={timeline.title} />
+      <Typing content={timeline.title} />
       <Cloud />
     </div>
   );
